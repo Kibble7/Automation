@@ -1,0 +1,79 @@
+# ==========================================
+# Windows & OS Artifacts
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ==========================================
+# Virtual Machine & Disk Images (Do NOT commit to Git)
+# ==========================================
+*.vhdx
+*.vhd
+*.iso
+*.vmdk
+*.qcow2
+*.vmem
+*.nvram
+
+# ==========================================
+# PowerShell & Script Logs
+# ==========================================
+*.log
+*.clixml
+Transcript-*.txt
+
+# ==========================================
+# Python Artifacts (For future use)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# IDE & Editor Settings
+# ==========================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# Security & Sensitive Data
+# ==========================================
+*.key
+*.pem
+*.pfx
+*.cer
+*.p12
+.env
+secrets.json
+credentials.ps1
+*password*.txt

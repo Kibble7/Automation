@@ -1,0 +1,12 @@
+---
+- name: Send maintenance notification
+  hosts: linux_servers
+  become: true
+
+  tasks:
+    - name: Notify logged-in users
+      ansible.builtin.command:
+        argv:
+          - wall
+          - "SERVER UPDATE IN PROGRESS - Please save your work. Maintenance will begin shortly."
+      changed_when: false

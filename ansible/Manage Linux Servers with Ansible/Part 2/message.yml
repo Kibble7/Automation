@@ -1,0 +1,23 @@
+---
+- name: Linux Server Maintenance Announcement
+  hosts: vms
+  become: true
+  gather_facts: true
+
+  vars:
+    maintenance_message: |
+      ==========================================
+      SERVER MAINTENANCE ANNOUNCEMENT
+      ==========================================
+      Server: {{ inventory_hostname }}
+      Maintenance Date: Today
+      Please save your work and log out.
+      Thank you.
+      ==========================================
+
+  tasks:
+    - name: Display maintenance announcement
+      ansible.builtin.command:
+        argv:
+          - wall
+          - "{{ maintenance_message }}"
